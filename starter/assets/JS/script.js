@@ -23,7 +23,7 @@ $(document).ready(function(){
     })
 
 function hourUpdate(){
-    let currentHour = moment().hours();
+    let currentHour = dayjs().format();
     
 
     for (let i = 0; i < $(".time-block").length; i++){
@@ -65,7 +65,7 @@ $("#hour-16.description").val(localStorage.getItem("hour-16"))
 $("#hour-17.description").val(localStorage.getItem("hour-17"))
 
 
-$("#currentDay").text(moment().format("dddd, MMMM, Do"))
+$("#currentDay").text(dayjs('2019-01-25').format('DD/MM/YYYY') )
 
 
 
